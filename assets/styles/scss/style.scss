@@ -1,0 +1,144 @@
+@import "normalize";
+@import "layout";
+@import "fonts";
+@import "variables";
+@import "slick";
+@import "header";
+@import "portfolio";
+@import "team";
+@import "contact";
+@import "stub";
+@import "end";
+@import "testimonals";
+
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: $font-primary;
+  color: $color-primary--dark;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*Headers of section - the same*/
+
+.ba-section{
+
+  &__header{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: $color-primary--dark;
+  }
+
+  &__title{
+    color: $color-primary-header--dark;
+    font-family: $font-header;
+    font-size: 20px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  &__description{
+    padding-top: 40px;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+}
+
+/*Social icons in footer*/
+
+.ba-social{
+  &-links{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  &-link__wrapper{
+    margin: 0 5px;
+  }
+  &-link:hover img{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transform: scale(1.2);
+  }
+}
+
+/*Dots for slick*/
+
+.slick-dotted.slick-slider
+{
+  margin-bottom: 0;
+}
+
+.slick-dots
+{
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li
+{
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button
+{
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  color: transparent;
+  border: 1px solid #19bd9a;
+  border-radius: 50%;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+  background-color: #19bd9a;
+  outline: none;
+}
+
+.slick-dots li.slick-active button
+{
+  background-color: #19bd9a;
+}
+
+
+/*Slick - flex*/
+
+
+.slick-initialized .slick-slide{
+  display: flex;
+}
+

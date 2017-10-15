@@ -1,0 +1,63 @@
+.ba-section-team__slider{
+  padding-bottom: 170px;
+}
+
+.ba-team-slider__wrapper{
+  margin: 0 auto;
+  max-width: 1030px;
+}
+
+
+.ba-team-member{
+  outline: none;
+  border: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  & img {
+    padding-left: 2px;
+  }
+
+  &__about{
+    text-align: right;
+    max-width: 420px;
+    margin-top: 25px;
+  }
+
+  &__presentation {
+    border-right: 4px solid #19bd9a;
+    padding-right: 43px;
+  }
+
+  &__name{
+    color: #464646;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.04em;
+  }
+
+  &__position{
+    color: $color-primary--dark;
+    font-family: $font-header;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+  }
+
+  &__describe{
+    padding-top: 30px;
+    padding-right: 46px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+@media all and (max-width: 720px){
+    .ba-team-member{
+      justify-content: center;
+  }
+
+}

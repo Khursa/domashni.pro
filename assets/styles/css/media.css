@@ -1,0 +1,13 @@
+@media screen and (min-width: 1197px) {
+    .ba-header__title--main {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin: 0 auto 16px;
+    letter-spacing: 0.2em; 
+    text-align: center
+    color: red;;}
+}
+
+

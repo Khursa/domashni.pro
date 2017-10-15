@@ -1,0 +1,38 @@
+.ba-section-stub{
+  background: #000 url("../../images/bg-contact.png") 50% no-repeat;
+  min-height: 200px;
+  background-size: cover;
+  padding-top: 55px;
+}
+
+.ba-stub{
+
+
+
+  &__header{
+    color: $color-primary;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px;
+    letter-spacing: 0.04em;
+  }
+  &__link{
+    color: $color-primary;
+    display: block;
+    width: 140px;
+    height: 37px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 37px;
+    vertical-align: middle;
+    border-radius: 18px;
+    border: 1px solid $color-primary;
+
+    &:hover{
+      color: #19bd9a;
+      border-color: #19bd9a;
+    }
+  }
+}

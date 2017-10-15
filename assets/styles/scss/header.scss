@@ -1,0 +1,145 @@
+.ba-header {
+  background: #000 url("../../images/background.jpg") 50% no-repeat;
+  min-height: 737px;
+  background-size: cover;
+  position: relative;
+  padding: 40px 0 77px;
+  color: $color-primary;
+
+  &-logo-menu {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  &__logo{
+    padding-top: 7px;
+    flex-shrink: 0;
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+
+  &__menu{
+    padding-right: 5px;
+  }
+
+  &__info {
+    text-align: center;
+    padding: 180px 0 210px;
+    margin: 0 auto;
+  }
+
+  &__title {
+
+    h1{
+      font-family: $font-header;
+      font-size: 35px;
+      line-height: 70px;
+      text-transform: uppercase;
+      margin: 0 0 16px;
+      letter-spacing: 0.2em;
+    }
+
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+
+  }
+  &__scroll{
+    background: #19bd9a;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover{
+      box-shadow: 0 0 10px rgba(255,255,255, .5);
+      transform: translateX(-50%);
+    }
+  }
+  &__arrow-link{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url("../../images/button.png") 50% no-repeat;
+  }
+}
+
+
+.ba-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+
+  &__item {
+    line-height: 12px;
+    margin-left: 2px;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    position: relative;
+    transition: color 0.25s;
+    cursor: pointer;
+
+    &:before, &:after{
+      display: block;
+      content: '';
+      position: absolute;
+      border: 1px solid transparent;
+      width: 0;
+      height: 0;
+    }
+    &:before{
+      top: 0;
+      left: 0;
+    }
+
+    &:after{
+      bottom: 0;
+      right: 0;
+    }
+    &:hover:before,
+    &:hover:after,
+    &--active:before,
+    &--active:after{
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover:before,
+    &--active:before{
+      border-radius: 16px;
+      border-top-color: $color-primary;
+      border-right-color: $color-primary;
+      transition:
+              width 0.25s ease-out,
+              height 0.25s ease-out 0.25s;
+    }
+
+    &:hover:after,
+    &--active:after{
+      border-radius: 16px;
+      border-bottom-color: $color-primary;
+      border-left-color: $color-primary;
+      transition:
+              border-color 0s ease-out 0.5s,
+              width 0.25s ease-out 0.5s,
+              height 0.25s ease-out 0.75s;
+    }
+  }
+  &__link{
+    color: $color-primary;
+    font-size: 16px;
+    line-height: 12px;
+  }
+}
+
+
+
